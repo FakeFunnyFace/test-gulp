@@ -317,6 +317,7 @@ function watchFiles() {
   gulp.watch(src.templates, gulp.series(htmlProcess, browserSyncReload));
   gulp.watch(src.scss + '/**/*.*', gulp.series(scssProcess, browserSyncReload));
   gulp.watch(src.scss + '/**/*.*', gulp.series(scssToMinProcess, browserSyncReload));
+  gulp.watch(src.libs + '/**/*.*', gulp.series(copyLibsProcess, browserSyncReload));
   gulp.watch(
     src.js + '/!(app)*.js',
     gulp.series(libsJsProcess, browserSyncReload),
