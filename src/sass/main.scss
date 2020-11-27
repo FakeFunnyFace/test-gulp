@@ -8,7 +8,7 @@
 
 // Elements
 @import 'elements/preloader';          // Preloader
-@import 'elements/buttuns';            // Buttons
+@import 'elements/buttons';            // Buttons
 @import 'elements/forms';              // Forms
 @import 'elements/images';             // Images
 @import 'elements/cards';              // Cards
@@ -23,5 +23,6 @@
 
 // Modules
 @import 'modul/header-nav';            // Header & Navbar
+@import 'modul/sections';              // Sections from main
 @import 'modul/sidebar';               // Left || Right sidebar
 @import 'modul/footer'                 // Footer

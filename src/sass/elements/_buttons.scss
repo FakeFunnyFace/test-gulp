@@ -1,0 +1,47 @@
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    outline: 0!important;
+    border: 0;
+    width: 235px;
+    height: 65px;
+    transition: all .2s ease-out;
+    &:hover {
+        background-color: transparent;
+        color: #000;
+        border: 1px solid #000000;
+    }
+    @include mq ('phablet', max) {
+        width: 230px;
+        height: 60px;
+    }
+    }
+
+    .btn {
+    @include mq('desktop-small', max) {
+            display: flex;
+            justify-content: flex-start;
+        }
+    @include mq('desktop-small', max) {
+            justify-content: center;
+            margin-top: 10px!important;
+        }
+    }
+
+
+
+.education {
+    .btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+    
+
