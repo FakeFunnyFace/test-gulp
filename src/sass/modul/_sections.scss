@@ -40,6 +40,9 @@
         @include mq('phablet', max) {
             font-size: 2.4rem;
         }
+        @include mq('phone-wide', max) {
+            font-size: 1.7  rem;
+        }
     }
     h4 {
         font-weight: 600;
@@ -414,6 +417,9 @@ section.about
         font-weight: 700;
     }
     p {
+        @include mq('tablet-small', max) {
+            text-align: center;
+        }
         &:first-child {
             font-size: 1.5rem;
             @include mq('phone-wide', max) {
@@ -436,6 +442,10 @@ section.about
     }
     h2 {
         text-align: left;
+        @include mq('tablet-small', max) {
+            text-align: center;
+
+        }
     }
     img {
         object-fit: cover;
@@ -482,7 +492,7 @@ section.about
     img {
         object-fit: cover;
         height: 100%;
-        width: 100%;
+        max-width: 100%;
         @include mq('tablet', max) {
             height: 300px;
             object-fit: contain;
@@ -491,6 +501,12 @@ section.about
     span {
         display: inline-block;
         font-weight: 700;
+    }
+}
+
+ul.ml-5 {
+    @include mq('tablet', max) {
+        margin-left: 0!important;
     }
 }
 
@@ -752,6 +768,9 @@ section.about
         font-weight: 400;
         padding: 0px 65px;
         text-align: center;
+        @include mq('phone-wide', max) {
+            font-size: 1.2rem;
+        }
 
     }
 }

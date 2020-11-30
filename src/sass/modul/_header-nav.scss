@@ -129,8 +129,17 @@ h5 {
         @include mq('tablet', max) {
             font-size: .9rem;
         }
-        
     }
+
+    
+    .container {
+        display: flex;
+        @include mq('tablet', max) {
+            display: block!important;
+        }
+    }
+
+
     p   {
         color: rgba(1, 1, 1, 0.502);
             @include mq('desktop-small', max) {
