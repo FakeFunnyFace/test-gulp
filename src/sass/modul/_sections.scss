@@ -21,6 +21,10 @@ body {
     &:hover {
         color: #fff;
     }
+    @include mq('desktop-small', max) {
+        bottom: 30px;
+        right: 30px;
+    }
 }
  .active {
     display: fixed;
