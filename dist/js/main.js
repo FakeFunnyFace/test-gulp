@@ -31,7 +31,7 @@ var smoothJumpUp = function() {
 
 window.onscroll = function() {
 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-if (scrolled > 100) {
+if (scrolled > 600) {
   document.getElementById('upbutton').style.display = 'block';
 } else {
   document.getElementById('upbutton').style.display = 'none';
