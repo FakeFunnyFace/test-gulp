@@ -70,6 +70,14 @@ h5 {
 }
 
 // -----------------------------------------------.hamburger-menu---------------------------------------
+
+body {
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+
 .hamburger-menu {
     background: #fff;
     position: fixed;
@@ -158,6 +166,7 @@ h5 {
         visibility: visible;
         top: 0;
         overflow-y: auto;
+        
     }
 }
 
@@ -263,6 +272,7 @@ h5 {
 #nav-icon1 span:nth-child(1) {
     top: 12px;
     padding: 2px;
+    @include
 }
 
 #nav-icon1 span:nth-child(2) {
