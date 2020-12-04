@@ -33,6 +33,7 @@ body {
         padding: 3px;
     }
     .fa-arrow-up {
+            padding: 5px;
         @include mq('phablet', max) {
             font-size: 12px;
         }

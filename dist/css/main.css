@@ -389,14 +389,19 @@ header {
       transform: translateY(0px); }
     header.active .container_nav {
       padding: 1rem 0; }
+  header img {
+    width: 110px;
+    max-height: 100%; }
 
-.container_nav {
-  max-width: 1440px;
-  padding: 4rem 0;
+.mynav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.6rem 0;
   margin: auto;
-  transition: all 0.5s ease; }
+  transition: all 0.4s ease; }
   @media only screen and (max-width: 767px) {
-    .container_nav {
+    .mynav {
       padding: 1rem 0;
       height: 75px; } }
 
@@ -535,6 +540,19 @@ body.modal-open {
   @media only screen and (max-width: 767px) {
     .hamburger-menu .col-md-3 .social {
       padding: 45px 0; } }
+  .hamburger-menu .col-md-3 .social li:hover:first-child a {
+    color: #4867aa;
+    text-decoration: none; }
+  .hamburger-menu .col-md-3 .social li:hover:nth-child(2) a {
+    color: #ec0c53;
+    text-decoration: none; }
+  .hamburger-menu .col-md-3 .social li:hover:last-child a {
+    color: #009af1;
+    text-decoration: none; }
+  .hamburger-menu .col-md-3 .social i {
+    width: 10px;
+    height: 10px;
+    padding-right: 25px; }
 
 .hamburger-menu .container.d-flex {
   height: 100%;
@@ -643,9 +661,11 @@ body {
       width: 35px;
       height: 35px;
       padding: 3px; } }
-  @media only screen and (max-width: 559px) {
-    .button-up .fa-arrow-up {
-      font-size: 12px; } }
+  .button-up .fa-arrow-up {
+    padding: 5px; }
+    @media only screen and (max-width: 559px) {
+      .button-up .fa-arrow-up {
+        font-size: 12px; } }
 
 .active {
   display: fixed; }
