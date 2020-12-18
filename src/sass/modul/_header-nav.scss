@@ -14,6 +14,12 @@ header {
             padding: 1rem 0;
         }
     }
+    .lang {
+        padding-top: 2rem;
+            :not(:first-child) {
+                padding-left: 1rem;
+            }
+    }
     img {
         width: 110px;
         max-height: 100%;
@@ -167,10 +173,11 @@ body {
     }
 
     &.active {
+        padding-bottom: 5rem;
         opacity: 1;
         visibility: visible;
         top: 0;
-        overflow-y: auto;
+        overflow-y: none;
     }
 }
 
