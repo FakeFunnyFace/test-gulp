@@ -230,6 +230,7 @@ body {
     .collapsed {
         .header_title {
         border-radius: 15px 0px 0 15px;
+        transition: .2s ease-in-out;
         }
     }
 
